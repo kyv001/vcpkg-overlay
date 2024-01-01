@@ -1,0 +1,18 @@
+﻿{
+  "name": "juce-host-dev-kit",
+  "version": "1.0.0.0",
+  "port-version": 1,
+  "description": "JUCE Host Application Development Kit",
+  "homepage": "https://github.com/Do-sth-sharp/juce-host-dev-kit",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}
