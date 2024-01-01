@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/Do-sth-sharp/juce-host-dev-kit.git")
-set (GIT_REV "15300688127c671c68bb8314bcec37ab4f88bc7c")
+set (GIT_REV "0356eff0fb58e02dc7e8a58f4f31f9d9af6c0795")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
@@ -46,23 +46,3 @@ file (INSTALL "${SOURCE_PATH}/LICENSE-ASIOSDK.txt" DESTINATION "${CURRENT_PACKAG
 file (INSTALL "${SOURCE_PATH}/LICENSE-VST2SDK.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-VST2SDK)
 file (INSTALL "${SOURCE_PATH}/LICENSE-VST3SDK.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-VST3SDK)
 file (INSTALL "${SOURCE_PATH}/JUCE/LICENSE.md" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-JUCE)
-
-file (REMOVE_RECURSE
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_devices/native/java"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_formats/codecs/flac/libFLAC/deduplication"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_plugin_client/LV2"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_plugin_client/VST3"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_processors/format_types/LV2_SDK/sratom/src"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_processors/format_types/VST3_SDK/base/thread/source"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_processors/format_types/VST3_SDK/public.sdk/samples"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_audio_utils/native"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_core/native/java"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_core/native/javacore"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_gui_basics/native/java"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_gui_basics/native/javaopt"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_gui_extra/native/java"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_gui_extra/native/javaopt"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_opengl/native/java"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_product_unlocking/native"
-	"${CURRENT_PACKAGES_DIR}/include/${PORT}/modules/juce_video/native/java"
-)
