@@ -15,8 +15,7 @@
       "host": true
     },
     {
-      "name": "protobuf",
-      "host": true
+      "name": "protobuf"
     }
   ]
 }

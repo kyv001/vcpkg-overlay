@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
-set (GIT_URL "https://github.com/FangCunWuChang/FlowUI.git")
-set (GIT_REV "8f8c1e898b296a1c3128505c5dd5bc6f38ea16fc")
+set (GIT_URL "https://github.com/Do-sth-sharp/cmake-lame.git")
+set (GIT_REV "8850df477e987c2c73f562f1b377bab879c54c14")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
@@ -33,6 +33,8 @@ vcpkg_execute_required_process (
 
 vcpkg_cmake_configure (
 	SOURCE_PATH "${SOURCE_PATH}"
+	OPTIONS
+		-DLAME_VCPKG_TOOLS_HINT=ON
 )
 
 vcpkg_cmake_install ()
@@ -42,3 +44,4 @@ vcpkg_cmake_config_fixup (PACKAGE_NAME ${PORT} CONFIG_PATH lib/cmake/${PORT})
 file (REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 file (REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 file (INSTALL "${SOURCE_PATH}/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
+file (INSTALL "${SOURCE_PATH}/lame-3.100/COPYING" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-LAME)

@@ -15,8 +15,7 @@
       "host": true
     },
     {
-      "name": "juce-host-dev-kit",
-      "host": true
+      "name": "juce-host-dev-kit"
     }
   ]
 }

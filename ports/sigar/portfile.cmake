@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/Do-sth-sharp/sigar.git")
-set (GIT_REV "310570932215911254e72de14f00bbef6b16c8c4")
+set (GIT_REV "4951932ed65646b16ca034a0dd4aacff88a14770")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
