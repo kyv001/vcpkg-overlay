@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/Do-sth-sharp/VocalShaperProject4.git")
-set (GIT_REV "ed24818e146a7cace280f3306476040df2167c1d")
+set (GIT_REV "97944ea8e85c507e45b7fa418741a40ffe0baf89")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
