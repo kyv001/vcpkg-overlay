@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/Do-sth-sharp/SynthEngineDemo.git")
-set (GIT_REV "2b0af1da2e23e37003b5e02d3d218e2fba04f423")
+set (GIT_REV "0bfa21239d20869574824f0b2198e6a27b64b690")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
@@ -44,6 +44,7 @@ file (REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 file (INSTALL "${SOURCE_PATH}/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
 file (INSTALL "${SOURCE_PATH}/juce-vst3-dev-kit/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-JUCEVST3DEVKIT)
 file (INSTALL "${SOURCE_PATH}/juce-vst3-dev-kit/libDMDA/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-LIBDMDA)
+file (INSTALL "${SOURCE_PATH}/juce-vst3-dev-kit/ARA_SDK/ARA_Library/LICENSE.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-ARASDK)
 file (INSTALL "${SOURCE_PATH}/juce-vst3-dev-kit/LICENSE-VST2SDK.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-VST2SDK)
 file (INSTALL "${SOURCE_PATH}/juce-vst3-dev-kit/LICENSE-VST3SDK.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-VST3SDK)
 file (INSTALL "${SOURCE_PATH}/juce-vst3-dev-kit/JUCE/LICENSE.md" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-JUCE)
