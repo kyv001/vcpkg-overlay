@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/Do-sth-sharp/juce-host-dev-kit.git")
-set (GIT_REV "6c64b6c4ca6de3bdb8b99bb895c7170c6a390890")
+set (GIT_REV "d73e337eee6b7e03de2496ad6e8abc28ea568133")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
@@ -42,7 +42,6 @@ vcpkg_cmake_config_fixup (PACKAGE_NAME ${PORT} CONFIG_PATH lib/cmake/${PORT})
 file (REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 file (REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 file (INSTALL "${SOURCE_PATH}/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright)
-file (INSTALL "${SOURCE_PATH}/libDMDA/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-LIBDMDA)
 file (INSTALL "${SOURCE_PATH}/ARA_SDK/ARA_Library/LICENSE.txt" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-ARASDK)
 file (INSTALL "${SOURCE_PATH}/ARAExtension/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-ARAEXTENSION)
 file (INSTALL "${SOURCE_PATH}/libMackieControl/LICENSE" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright-MACKIECONTROL)
