@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/Do-sth-sharp/cmake-lame.git")
-set (GIT_REV "8850df477e987c2c73f562f1b377bab879c54c14")
+set (GIT_REV "a9517352ba0812ffcecf7d948bece395e45a4c8e")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 

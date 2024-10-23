@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
-set (GIT_URL "https://github.com/Do-sth-sharp/sigar.git")
-set (GIT_REV "4951932ed65646b16ca034a0dd4aacff88a14770")
+set (GIT_URL "https://github.com/Do-sth-sharp/check-vcpkg.git")
+set (GIT_REV "dc2797e53a8832c4955d7798c4b02b7817b88886")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
@@ -38,6 +38,10 @@ vcpkg_cmake_configure (
 vcpkg_cmake_install ()
 vcpkg_cmake_config_fixup (PACKAGE_NAME ${PORT} CONFIG_PATH lib/cmake/${PORT})
 #vcpkg_copy_pdbs ()
+
+ set (VCPKG_POLICY_EMPTY_INCLUDE_FOLDER enabled)
+ set (VCPKG_POLICY_ALLOW_EXES_IN_BIN enabled)
+ set (VCPKG_POLICY_ALLOW_EMPTY_FOLDERS enabled)
 
 file (REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 file (REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
