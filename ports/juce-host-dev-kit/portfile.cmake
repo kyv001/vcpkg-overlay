@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/Do-sth-sharp/juce-host-dev-kit.git")
-set (GIT_REV "b5edae2cb963c03182cf51cc098ea5e3acc33aa1")
+set (GIT_REV "7d247ee133506745540a3f2a24705ca2445b19ad")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
