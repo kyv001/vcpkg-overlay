@@ -1,7 +1,7 @@
 ﻿find_program (GIT git)
 
 set (GIT_URL "https://github.com/kyv001/SynthEngineDemo.git")
-set (GIT_REV "d9f068a364e863d8097facd39ecce1a64863fd12")
+set (GIT_REV "3c3adeec6a6b41597e8009e4a263484521262cf2")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src)
 
